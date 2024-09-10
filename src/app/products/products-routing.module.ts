@@ -1,21 +1,27 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BasicsPagesComponent } from './pages/basics-pages/basics-pages.component';
-import { NumbersPagesComponent } from './pages/numbers-pages/numbers-pages.component';
-import { UncommonPagesComponent } from './pages/uncommon-pages/uncommon-pages.component';
+
+import { BasicsPageComponent } from './pages/basics-page/basics-page.component';
+import { NumbersPageComponent } from './pages/numbers-page/numbers-page.component';
+import { OrderComponent } from './pages/order/order.component';
+import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.component';
 
 const routes: Routes = [
   {
-  path: '',
-  component: BasicsPagesComponent
+    path: '',
+    component: BasicsPageComponent
   },
   {
-  path: 'numbers',
-  component: NumbersPagesComponent
+    path: 'numbers',
+    component: NumbersPageComponent
   },
   {
-  path: 'uncommon',
-  component: UncommonPagesComponent
+    path: 'uncommon',
+    component: UncommonPageComponent
+  },
+  {
+    path: 'custom',
+    component: OrderComponent
   },
   {
     path: '**',
